@@ -1,0 +1,27 @@
+<x-app-layout>
+    <x-slot name="header">
+        <h2 class="font-semibold text-xl text-gray-800 leading-tight">
+            {{ __('Dashboard') }}
+        </h2>
+    </x-slot>
+
+    <div class="py-12">
+        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+            <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
+                <div class="p-6 bg-white border-b border-gray-200 text-center">
+                    You're logged in!
+                </div>
+            </div>
+
+            <div class="mt-3 flex gap-5 justify-around">
+                <a class="text-white bg-gray-800 px-4 py-2" href="{{ route('category.create') }}">
+                    <i class="fa fa-plus"></i> Create Category
+                </a>
+
+                <a class="text-white bg-gray-800 px-4 py-2" href="{{ route('product.create') }}">
+                    <i class="fa fa-plus"></i> Create Product
+                </a>
+            </div>
+        </div>
+    </div>
+</x-app-layout>
